@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/pseudo.css">
+    <title>Document</title>
+    <style>
+        h1, h2{
+    text-align: center;
+    margin-top: 100px;
+}
+h1:hover{
+    color: orangered;
+}
+.focus:focus{
+    color: blueviolet;
+}
+.focus1:focus{
+    color: rgb(255, 123, 0);
+    background-color: blueviolet;
+    border-color: blue;
+    padding: 5px;
+}
+a:visited{
+    color: red;
+}
+.visit:visited{
+    color: rgb(143, 219, 29);
+}
+
+h3::after{
+    content: 'Guys';
+    background-color: aqua;
+}
+.before::before{
+    content: 'Hello';
+    background-color: rgb(0, 255, 13);
+}
+ul{
+    text-align: center;
+    list-style-type: none;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+li:first-child{
+    color: green;
+}
+li:last-child{
+    background-color: aqua;
+}
+li:nth-child(2n){
+    font-size: small;
+    color: blue;
+    font-weight: 900;
+}
+/* li:nth-child(2n+1){
+    font-size: large;
+    color: rgb(255, 187, 0);
+    font-weight: 900;
+} */
+    </style>
+</head>
+<body>
+    <h1>this is the :hover effect</h1>
+    <h2>this isn't applied the :hover effect</h2>
+    <input class="focus1" type="text" placeholder="applied focus pseudo">
+    <input class="focus" type="text" placeholder="applied focus pseudo">
+    <input type="text" placeholder="isn't applied focus pseudo">
+    <br>
+    <a href="https://www.google.co.uk/">Google</a>
+    <a href="https://mybrandnewlogo.com/">New Brand where i didn't visit ever </a>
+    <a class="visit" href="https://mybrandnewlogo.com/">New Brand  </a>
+
+    <h3>What's up-1</h3>
+    <h3 class="before">What's up-2</h3>
+    <h3>What's up-3</h3>
+    <h3 class="before">What's up-4</h3>
+    <h3>What's up-5</h3>
+    <h3>What's up-6</h3>
+    <h3 class="before">What's up-7</h3>
+    <h3>What's up-8</h3>
+    <ul>
+        <li>asib</li>
+        <li>anik</li>
+        <li>abid</li>
+        <li>akib</li>
+        <li>tasif</li>
+        <li>walid</li>
+        <li>nabid</li>
+    </ul>
+</body>
+</html>
