@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+        }
+        .box{
+            border: 3px solid purple;
+            padding: 20px;
+            width: 200px;
+            margin: 20px;
+        }
+        #box-2{
+            visibility: hidden;
+        }
+        #box-4{
+            display: none;
+        }
+
+        :root{
+            --primary-color: purple;
+            --border: 5px solid green;
+            --second-color: pink;
+            --background: skyblue;
+        }
+        #box-5, #ball-1{
+            border: var(--border);
+            color: var(--primary-color);
+        }
+        #ball-4{
+            color: var(--second-color);
+            background-color: var(--background);
+            border: var(--border);
+        }
+        .pond{
+            background-color: var(--background);
+            width: calc(100% - 500px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <div class="box" id="box-1">
+                <h1>Visibility-1</h1>
+            </div>
+            <div class="box" id="box-2">
+                <h1>Visibility-2</h1>
+            </div>
+            <div class="box" id="box-3">
+                <h1>Visibility-3</h1>
+            </div>
+            <div class="box" id="box-4">
+                <h1>Visibility-4</h1>
+            </div>
+            <div class="box" id="box-5">
+                <h1>Visibility-5</h1>
+            </div>
+        </section>
+        <section>
+            <div class="ball" id="ball-1">
+                <h1>:root{--primary-color}</h1>
+            </div>
+            <div class="ball" id="ball-2">
+                <h1>:root{--secondary-color}</h1>
+            </div>
+            <div class="ball" id="ball-3">
+                <h1>:root{--primary-color}</h1>
+            </div>
+            <div class="ball" id="ball-4">
+                <h1>:root{--single-border}</h1>
+            </div>
+            <div class="ball" id="ball-5">
+                <h1>:root{--primary-color}</h1>
+            </div>
+            
+        </section>
+    </header>
+    <main>
+        <div class="pond">
+            <h2>calc(100% - 500px)</h2>
+        </div>
+    </main>
+
+</body>
+</html>
